@@ -1,0 +1,13 @@
+module.exports = {
+  definition: `
+    type Project {
+      id: ID!
+      title: String!
+      description: String!
+    }
+    extend type UsersPermissionsMe {
+      projects: [Project]
+      groups: JSON!
+    }
+  `
+}

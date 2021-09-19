@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/projects-in-progresses",
+      "handler": "projects-in-progress.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects-in-progresses/count",
+      "handler": "projects-in-progress.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projects-in-progresses/:id",
+      "handler": "projects-in-progress.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/projects-in-progresses",
+      "handler": "projects-in-progress.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/projects-in-progresses/:id",
+      "handler": "projects-in-progress.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/projects-in-progresses/:id",
+      "handler": "projects-in-progress.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

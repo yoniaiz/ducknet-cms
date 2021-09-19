@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groups",
+  "info": {
+    "name": "group",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "projects": {
+      "via": "group",
+      "collection": "projects"
+    },
+    "project": {
+      "model": "projects"
+    },
+    "users_permissions_users": {
+      "via": "groups",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

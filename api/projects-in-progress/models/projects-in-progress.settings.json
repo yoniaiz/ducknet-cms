@@ -1,0 +1,15 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects_in_progresses",
+  "info": {
+    "name": "projectsInProgress",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

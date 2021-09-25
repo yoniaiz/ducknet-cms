@@ -69,8 +69,8 @@
       "collection": "technologies"
     },
     "projects": {
-      "collection": "projects",
       "via": "users",
+      "collection": "projects",
       "dominant": true
     },
     "mentor": {

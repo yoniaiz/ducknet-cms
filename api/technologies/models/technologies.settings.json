@@ -36,8 +36,8 @@
       "dominant": true
     },
     "projects": {
-      "collection": "projects",
       "via": "technologies",
+      "collection": "projects",
       "dominant": true
     }
   }

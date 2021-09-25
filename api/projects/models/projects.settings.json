@@ -42,6 +42,14 @@
       "via": "projects",
       "plugin": "users-permissions",
       "collection": "user"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "inProgress",
+        "completed",
+        "saved"
+      ]
     }
   }
 }

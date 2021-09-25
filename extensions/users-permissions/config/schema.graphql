@@ -1,13 +1,48 @@
 module.exports = {
   definition: `
+    enum ProjectStatus {
+      inProgress
+      completed
+      saved
+    }
     type Project {
       id: ID!
       title: String!
       description: String!
+      status: ProjectStatus
+    }
+    type UserProjects {
+        inProgress: [Project]
+        completed: [Project]
     }
     extend type UsersPermissionsMe {
       projects: [Project]
       groups: JSON!
     }
-  `
+  `,
+  query: `
+    userProjectsByStatus(status: String) : [Project]
+  `,
+  resolver: {
+    Query: {
+      userProjectsByStatus: {
+        resolverOf: "plugins::users-permissions.user.me",
+        resolver: async (object, options, {context}) => {
+          const status = context.params._status
+          const limit = context.params._limit
+
+          const { id } = context.state.user;
+          const data =  await strapi.plugins["users-permissions"].services.user.fetch({
+            id,
+          });
+          
+          if(Array.isArray(data.projects)) {
+            return data.projects.filter(project => project.status === status)
+          }
+
+          return []
+        }
+      }
+    }
+  }
 }

@@ -19,7 +19,17 @@ module.exports = {
     if (data) {
       data = sanitizeUser(data);
     }
-    console.log(data);
+
+    // const inProgress = data.projects.filter(
+    //   (project) => project.status === "inProgress"
+    // );
+    // const saved = data.projects.filter((project) => project.status === "saved");
+    // const completed = data.projects.filter(
+    //   (project) => project.status === "completed"
+    // );
+
+    // data.projects = { inProgress, saved, completed };
+
     // Send 200 `ok`
     ctx.body = data;
   },

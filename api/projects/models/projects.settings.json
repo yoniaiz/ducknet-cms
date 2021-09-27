@@ -38,11 +38,6 @@
       "via": "projects",
       "collection": "technologies"
     },
-    "users": {
-      "via": "projects",
-      "plugin": "users-permissions",
-      "collection": "user"
-    },
     "status": {
       "type": "enumeration",
       "enum": [

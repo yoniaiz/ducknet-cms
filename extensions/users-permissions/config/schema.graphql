@@ -15,8 +15,20 @@ module.exports = {
         inProgress: [Project]
         completed: [Project]
     }
+    type ProjectInProgress {
+      project: Project!
+      started: Date!
+      progress: Float!
+    }
+
+    type CompletedProject {
+      project: Project!
+      completedOn: Date!
+    }
     extend type UsersPermissionsMe {
       projects: [Project]
+      projectsInProgress: [ProjectInProgress]
+      completedProjects: [CompletedProject]
       groups: JSON!
     }
   `,

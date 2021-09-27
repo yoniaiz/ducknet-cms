@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_project_in_progress_project_in_progresses",
+  "info": {
+    "name": "projectInProgress",
+    "icon": "wrench"
+  },
+  "options": {},
+  "attributes": {
+    "project": {
+      "model": "projects"
+    },
+    "started": {
+      "type": "date"
+    },
+    "progress": {
+      "type": "decimal",
+      "default": 0,
+      "max": 100,
+      "min": 0
+    }
+  }
+}

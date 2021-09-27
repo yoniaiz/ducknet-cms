@@ -68,13 +68,30 @@
       "via": "users_permissions_users",
       "collection": "technologies"
     },
-    "projects": {
-      "via": "users",
-      "collection": "projects",
-      "dominant": true
-    },
     "mentor": {
       "type": "boolean"
+    },
+    "projectInProgress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "project-in-progress.project-in-progress"
+    },
+    "projectsInProgress": {
+      "type": "dynamiczone",
+      "components": [
+        "project-in-progress.project-in-progress"
+      ]
+    },
+    "completedProject": {
+      "type": "component",
+      "repeatable": false,
+      "component": "completed-project.completed-project"
+    },
+    "completedProjects": {
+      "type": "dynamiczone",
+      "components": [
+        "completed-project.completed-project"
+      ]
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_completed_project_completed_projects",
+  "info": {
+    "name": "completedProject",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "project": {
+      "model": "projects"
+    },
+    "completedOn": {
+      "type": "datetime"
+    }
+  }
+}

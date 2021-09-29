@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_saved_project_saved_projects",
+  "info": {
+    "name": "savedProjects",
+    "icon": "save",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "project": {
+      "model": "projects"
+    },
+    "saved": {
+      "type": "boolean"
+    }
+  }
+}

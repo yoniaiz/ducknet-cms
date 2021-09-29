@@ -92,6 +92,17 @@
       "components": [
         "completed-project.completed-project"
       ]
+    },
+    "savedProject": {
+      "type": "component",
+      "repeatable": false,
+      "component": "saved-project.saved-projects"
+    },
+    "savedProjects": {
+      "type": "dynamiczone",
+      "components": [
+        "saved-project.saved-projects"
+      ]
     }
   }
 }

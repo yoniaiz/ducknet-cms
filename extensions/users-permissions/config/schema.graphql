@@ -25,10 +25,17 @@ module.exports = {
       project: Project!
       completedOn: Date!
     }
+
+    type SavedProject {
+      project: Project!
+      saved: Boolean
+    }
+
     extend type UsersPermissionsMe {
       projects: [Project]
       projectsInProgress: [ProjectInProgress]
       completedProjects: [CompletedProject]
+      savedProjects: [SavedProject]
       groups: JSON!
     }
   `,
